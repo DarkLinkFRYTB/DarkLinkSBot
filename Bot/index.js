@@ -6,12 +6,12 @@ const config = JSON.parse(fs.readFileSync(__dirname + "/config.json"))
 //Ready
 bot.on("ready", function() {
     const guilds = JSON.parse(fs.readFileSync(__dirname + "/guilds.json")) //Les différents serveurs
-    for(const guildID in guilds) {
+    /*for(const guildID in guilds) {
         let guild = bot.guilds.get(guildID) //Le serveur actuel
         if(!guild.available) return console.log(guildID + " : serveur introuvable.") //Si le serveur actuel est introuvable ou indisponible
         if(!guilds[guild.id].channels.captcha) return console.log(guild.name + " : channel captcha non défini.") //Si le salons de captcha n'est pas défini sur le serveur
-    }
-    bot.user.setActivity(config.prefix + "help", {type: "STREAMING", url: "https://twitch.com/dtdarklink"}) //Pour définir l'activité du bot
+    }*/
+    bot.user.setActivity(config.prefix + "help", {type: "STREAMING", url: "https://www.twitch.tv/dtdarklink"}) //Pour définir l'activité du bot
     console.log("Mon bot est fait !") //Log pour prévenir que le bot est fonctionnel
 })
 
