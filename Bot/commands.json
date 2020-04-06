@@ -1,0 +1,24 @@
+[
+    {
+        "name": {
+            "fr": "Help",
+            "en": "Help"
+        },
+        "description": {
+            "fr": "Cette commande vous envoies la liste des commandes disponibles.",
+            "en": "This command send to you available commands list."
+        },
+        "uses": {
+            "fr": [
+                "help",
+                "h"
+            ],
+            "en": [
+                "help",
+                "h"
+            ]
+        },
+        "path": "/commands/utilitaire/help.js",
+        "params": []
+    }
+]
